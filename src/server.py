@@ -29,3 +29,4 @@ with socket.create_server((HOST, PORT)) as server:
                                      f"\r\nRequest Source: ({HOST},{PORT})"
                                      f"\r\nResponse Status: {status_value} {status_phrase}"
                                      f"\r\n{data[4:]}".encode(FORMAT))
+        conn.close()
